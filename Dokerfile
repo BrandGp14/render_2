@@ -1,0 +1,5 @@
+FROM amazoncorretto:23-alpine-jdk
+
+COPY tarjet/financego-0.0.1-SNAPSHOT.jar app.jar
+
+EXPOSE 9000ENTRYPOINT ["java", "-jar", "app.jar"]
